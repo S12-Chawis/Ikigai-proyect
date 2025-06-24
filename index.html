@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ikigai – Santiago Villa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">My Ikigai – Santiago Villa</h1>
+            <p class="header-subtitle">Discovering purpose through passion, vocation, mission, and profession</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Ikigai Diagram -->
+            <div class="ikigai-diagram">
+                <div class="diagram-center">
+                    <span>IKIGAI</span>
+                </div>
+                <div class="diagram-section passion">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="diagram-section vocation">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="diagram-section mission">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="diagram-section profession">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+            </div>
+
+            <!-- Ikigai Sections -->
+            <div class="ikigai-sections">
+                <!-- What I Love (Passion) -->
+                <section class="ikigai-card" data-aos="fade-up">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h2 class="card-title">What I Love</h2>
+                    <p class="card-description">
+                        I love teaching, creating music, and building things that help others. 
+                        The joy of sharing knowledge and seeing others grow brings me immense satisfaction. 
+                        Music is my creative outlet, and technology is my tool for making a difference.
+                    </p>
+                </section>
+
+                <!-- What I'm Good At (Vocation) -->
+                <section class="ikigai-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h2 class="card-title">What I'm Good At</h2>
+                    <p class="card-description">
+                        I excel at problem-solving, creative thinking, and connecting with people. 
+                        My analytical mind helps me break down complex challenges, while my empathy 
+                        allows me to understand and serve others effectively.
+                    </p>
+                </section>
+
+                <!-- What the World Needs (Mission) -->
+                <section class="ikigai-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h2 class="card-title">What the World Needs</h2>
+                    <p class="card-description">
+                        The world needs more authentic connections, innovative solutions to real problems, 
+                        and people who lead with compassion. I believe in creating technology that serves 
+                        humanity and education that empowers individuals.
+                    </p>
+                </section>
+
+                <!-- What I Can Be Paid For (Profession) -->
+                <section class="ikigai-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h2 class="card-title">What I Can Be Paid For</h2>
+                    <p class="card-description">
+                        I can be paid for developing software solutions, teaching and mentoring, 
+                        and creating content that educates and inspires. My technical skills combined 
+                        with my ability to communicate complex ideas make me valuable in multiple domains.
+                    </p>
+                </section>
+            </div>
+
+            <!-- Reflection Button -->
+            <div class="reflection-section" data-aos="fade-up" data-aos-delay="400">
+                <button class="reflection-btn" onclick="openReflectionModal()">
+                    <i class="fas fa-lightbulb"></i>
+                    Reflect on Your Ikigai
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-quote">"Find your purpose, live with intention."</p>
+        </div>
+    </footer>
+
+    <!-- Reflection Modal -->
+    <div id="reflectionModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeReflectionModal()">&times;</span>
+            <h3>Reflection Question</h3>
+            <p>Is your life aligned with your purpose?</p>
+            <p class="modal-subtext">
+                Take a moment to reflect on how your daily actions, choices, and goals 
+                align with your Ikigai. Are you living authentically according to what 
+                you love, what you're good at, what the world needs, and what you can 
+                be paid for?
+            </p>
+            <button class="modal-btn" onclick="closeReflectionModal()">Continue Reflection</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
